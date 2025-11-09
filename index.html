@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    </head>
+<body>
+
+    <h1> Portafolio</h1>
+    <p class="subtitle">Karen Suarez</p>
+
+    <div class="projects">
+        <div class="card">
+          <a href="https://karensofs3.github.io/FACTURA_KS3/">
+            <img src="factura.png">
+            <h3>Factura</h3>
+            </a>
+        </div>
+
+        <div class="card">
+          <a href="https://karensofs3.github.io/tienda/">
+            <img src="tienda.png">
+            <h3>Tienda</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="https://avxla.github.io/Hotel/">
+            <img src="hotel.png">
+            <h3>Hotel</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="https://karensofs3.github.io/video.juego/">
+            <img src="videojuego.png">
+            <h3>Video juego</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="https://karensofs3.github.io/calculadora/">
+            <img src="calculadora.png">
+            <h3>calculadora</h3>
+          </a>
+        </div>
+    </div>
+
+</body>
+</html>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #3a002f, #1a0015);
+            color: #f0f4f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ff6fae;
+            font-size: 2.5em;
+            text-shadow: 0 0 12px rgba(255, 111, 174, 0.5);
+        }
+
+        p.subtitle {
+            color: #f3c8dc;
+            margin-bottom: 2em;
+            font-size: 1.1em;
+        }
+
+
+        .projects {
+            display: flex;
+            gap: 2em;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 2em;
+        }
+
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            box-shadow: 0 0 18px rgba(255, 182, 213, 0.2);
+            width: 320px;
+            text-align: center;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            border: 1px solid rgba(255, 182, 213, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 25px rgba(255, 111, 174, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+        }
+
+        .card h3 {
+            color: #ff85b8;
+            margin: 0.8em 0 0.4em 0;
+        }
+
+        .card p {
+            color: #f9d9e5;
+            font-size: 0.95em;
+            margin: 0 1em 1.2em 1em;
+        }
+
+        .card button {
+            background: #ff6fae;
+            border: none;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-bottom: 1.2em;
+            box-shadow: 0 0 10px rgba(255, 111, 174, 0.3);
+        }
+        .card a{
+            width: 100%;
+            height: 100vh;
+        }
+        .card button:hover {
+            background: #ff8fc0;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 143, 192, 0.5);
+        }
+    </style>
+
